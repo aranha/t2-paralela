@@ -1,11 +1,8 @@
-/* Sequencial.c (Roland Teodorowitsch; 10 out. 2019) */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
 #include "mpi.h"
-
 
 /* CONTANTES */
 #define GRAU         400
@@ -13,15 +10,12 @@
 #define TAM_INC  1000000
 #define TAM_MAX 10000000
 
-
 /* VARIAVEIS GLOBAIS */
 double x[TAM_MAX], y[TAM_MAX], gabarito[TAM_MAX];
-
 
 /* PROTOTIPOS */
 double polinomio(double v[], int grau, double x);
 void erro(char *msg_erro);
-
 
 double polinomio(double a[], int grau, double x) {
   int i;
@@ -33,13 +27,11 @@ double polinomio(double a[], int grau, double x) {
   return res;
 }
 
-
 void erro(char *msg_erro) {
   fprintf(stderr,"ERRO: %s\n",msg_erro);
   MPI_Finalize();
   exit(1);
 }
-
  
 int main(int argc, char** argv) {
   int id;            /* Identificador do processo */
