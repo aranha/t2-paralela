@@ -19,16 +19,12 @@ echo
 echo JOB_ID:
 echo `echo $PBS_JOBID`
 echo ################
-mpicc sequential.c -o sequential -fopenmp
 mpicc parallel.c -o parallel -fopenmp
-echo "sequencial"
-./sequential
-echo "--------------"
 
-echo "8 processos - 1 nodo"
-mpirun -np 8 ./parallel
-echo "--------------"
-
-echo "16 processos - 1 nodo"
+echo "16 processos - 2 nodos"
 mpirun -np 16 ./parallel
+echo "--------------"
+
+echo "32 processos - 2 nodos"
+mpirun -np 32 ./parallel
 echo "--------------"

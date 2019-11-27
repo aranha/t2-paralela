@@ -1,0 +1,81 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad03
+
+Initial Time is Wed Nov 27 01:20:58 EST 2019
+
+Directory is /home/pp12706/t2
+
+This jobs runs on the following nodes:
+grad03
+
+JOB_ID:
+125645
+
+sequencial
+[grad03:12092] mca: base: component_find: unable to open /usr/local/openmpi/openmpi-1.4.5/lib/openmpi/mca_btl_openib: perhaps a missing symbol, or compiled for a different version of Open MPI? (ignored)
+1000000 5.793134
+2000000 11.717448
+3000000 17.790947
+4000000 24.013297
+5000000 30.374577
+6000000 36.591984
+7000000 40.477777
+8000000 42.731516
+9000000 44.970322
+10000000 47.207527
+--------------
+8 processos - 1 nodo
+1000000 1.044319
+2000000 2.143568
+3000000 3.205979
+4000000 3.789970
+5000000 4.838665
+6000000 5.812637
+7000000 6.757196
+8000000 7.788998
+9000000 8.683771
+10000000 9.710843
+--------------
+16 processos - 1 nodo
+1000000 0.546229
+2000000 1.072658
+3000000 1.625580
+4000000 2.175104
+5000000 2.733706
+6000000 3.302995
+7000000 3.926207
+8000000 4.635076
+9000000 5.262160
+10000000 5.904064
+--------------
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12706 on the batch nodes
+Doing node grad03
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 00:25:39 
+
+ -- MEMORY       = 455676kb 
+
+ -- VIRTUAL MEM  = 6395468kb 
+
+ -- ELAPSED TIME = 00:06:54 
