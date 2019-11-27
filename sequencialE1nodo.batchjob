@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -m abe
 #PBS -V
-#PBS -l nodes=2:ppn=16:cluster-Grad,walltime=00:30:00
+#PBS -l nodes=1:ppn=16:cluster-Grad,walltime=00:30:00
 #PBS -M paulo.aranha@edu.pucrs.br
 #PBS -r n
 #PBS -j oe
@@ -26,17 +26,9 @@ echo "sequencial"
 echo "--------------"
 
 echo "8 processos - 1 nodo"
-mpirun -np 8 -ppn 1 ./parallel
+mpirun -np 8 ./parallel
 echo "--------------"
 
 echo "16 processos - 1 nodo"
-mpirun -np 16 -ppn 1 ./parallel
-echo "--------------"
-
-echo "16 processos - 2 nodos"
-mpirun -np 16 -ppn 2 ./parallel
-echo "--------------"
-
-echo "32 processos - 2 nodos"
-mpirun -np 32 -ppn 2 ./parallel
+mpirun -np 16 ./parallel
 echo "--------------"
