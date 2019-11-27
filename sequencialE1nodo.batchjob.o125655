@@ -1,0 +1,72 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad01
+
+Initial Time is Wed Nov 27 04:41:15 BRST 2019
+
+Directory is /home/pp12706/t2
+
+This jobs runs on the following nodes:
+grad01 grad02
+
+JOB_ID:
+125655
+
+16 processos - 2 nodos
+1000000 0.545280
+2000000 1.101302
+3000000 1.687289
+4000000 2.297275
+5000000 2.921703
+6000000 3.565976
+7000000 4.047470
+8000000 4.643529
+9000000 5.106767
+10000000 5.688827
+--------------
+32 processos - 2 nodos
+1000000 0.278122
+2000000 0.541659
+3000000 0.810770
+4000000 1.080125
+5000000 1.347615
+6000000 1.617882
+7000000 1.935307
+8000000 2.276777
+9000000 2.558643
+10000000 2.826889
+--------------
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12706 on the batch nodes
+Doing node grad01
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad02
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 00:14:48 
+
+ -- MEMORY       = 453732kb 
+
+ -- VIRTUAL MEM  = 6425200kb 
+
+ -- ELAPSED TIME = 00:01:12 
